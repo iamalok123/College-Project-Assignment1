@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Shah Rukh Khan - King of Bollywood</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Preloader styles */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: all 0.8s ease-out;
+        }
+        
+        .preloader.fade-out {
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(1.1);
+        }
+        
+        .preloader-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .preloader img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: zoomIn 1.5s ease-out;
+        }
+        
+        @keyframes zoomIn {
+            from { 
+                transform: scale(1.1);
+                opacity: 0;
+            }
+            to { 
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .preloader-text {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+        
+        .preloader-text h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .preloader-text p {
+            font-size: 1.5rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-content">
+            <img src="https://c4.wallpaperflare.com/wallpaper/404/414/559/shah-rukh-khan-4k-8k-wallpaper-preview.jpg" alt="Shah Rukh Khan">
+            <div class="preloader-text">
+                <h1>Shah Rukh Khan</h1>
+                <p>The King of Bollywood</p>
+            </div>
+        </div>
+    </div>
+
+    <header class="hero">
+        <img src="https://c4.wallpaperflare.com/wallpaper/594/57/123/actors-shah-rukh-khan-wallpaper-preview.jpg" alt="Bollywood Theater" class="hero-image">
+        <div class="hero-content">
+            <h1>Shah Rukh Khan</h1>
+            <p class="tagline">The King of Bollywood</p>
+        </div>
+    </header>
+
+    <section id="biography" class="section">
+        <h2>Biography</h2>
+        <div class="bio-content">
+            <img src="https://images.unsplash.com/photo-1598977054780-2dc700fdc9d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGVsaGl8ZW58MHx8MHx8fDA%3D" alt="Bollywood Cinema" class="bio-image">
+            <div class="bio-text">
+                <p>Shah Rukh Khan, also known as SRK, was born on November 2, 1965, in New Delhi, India. Rising from humble beginnings, he has become one of the most successful actors in Indian cinema history.</p>
+                <p>With a career spanning over three decades, SRK has appeared in more than 80 films, earning the title "King of Bollywood". His contribution to Indian cinema has earned him numerous accolades, including 14 Filmfare Awards.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="filmography" class="section">
+        <h2>Iconic Films & Career Highlights</h2>
+        <div class="film-categories">
+            <button class="film-filter active" data-category="all">All</button>
+            <button class="film-filter" data-category="romance">Romance</button>
+            <button class="film-filter" data-category="drama">Drama</button>
+            <button class="film-filter" data-category="action">Action</button>
+        </div>
+        <div class="movie-grid">
+            <div class="movie-card" data-category="romance">
+                <img src="https://www.yashrajfilms.com/images/default-source/Movies/Dilwale-Dulhania-Le-Jayenge/Dilwale-Dulhania-Le-Jayenge-Gallery/shahrukh-khan-and-kajol-in-dilwale-dulhania-le-jayengeb1f19da026f56f7f9f64ff0000090313.jpg?sfvrsn=6804f2cc_2" alt="Bollywood Romance">
+                <div class="movie-info">
+                    <h3>Dilwale Dulhania Le Jayenge</h3>
+                    <p>1995 | Romance</p>
+                    <div class="movie-details">
+                        <span>★ 9.1/10</span>
+                        <span>Longest running film in Indian cinema</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card" data-category="action">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWGssdKz4CubHUiLw_-VAEo9SrOsmMZE-9g&s" alt="Don 2">
+                <div class="movie-info">
+                    <h3>Don 2</h3>
+                    <p>2011 | Action Thriller</p>
+                    <div class="movie-details">
+                        <span>★ 8.2/10</span>
+                        <span>Blockbuster Sequel</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card" data-category="action">
+                <img src="https://wallpapers.com/images/hd/movie-pictures-84765sxiebwlifmj.jpg" alt="Pathaan">
+                <div class="movie-info">
+                    <h3>Pathaan</h3>
+                    <p>2023 | Action Thriller</p>
+                    <div class="movie-details">
+                        <span>★ 8.5/10</span>
+                        <span>Highest Grossing Hindi Film</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="section">
+        <h2>Awards & Achievements</h2>
+        <div class="awards-grid">
+            <div class="award-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdayir_zcxfN8UBVo0ASZyrrcRH1xi3M9vCafH-0rvcPfR_aD-awRWCYOHB3_mnm5epA0&usqp=CAU" alt="Filmfare Award">
+                <div class="award-info">
+                    <h3>Filmfare Awards</h3>
+                    <p>14 Best Actor Awards</p>
+                </div>
+            </div>
+            <div class="award-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/The_renowned_actor_Shri_Shah_Rukh_Khan_receives_the_Padma_Shri_award_from_the_President_Dr._A.P.J._Abdul_Kalam_in_New_Delhi_on_March_28%2C_2005.jpg/1280px-The_renowned_actor_Shri_Shah_Rukh_Khan_receives_the_Padma_Shri_award_from_the_President_Dr._A.P.J._Abdul_Kalam_in_New_Delhi_on_March_28%2C_2005.jpg" alt="Padma Shri">
+                <div class="award-info">
+                    <h3>Padma Shri</h3>
+                    <p>India's Fourth Highest Civilian Award</p>
+                </div>
+            </div>
+            <div class="award-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFnILzLjldqg9owpJZ5MAeD9J7cGzmVygaw&s" alt="Legion of Honour">
+                <div class="award-info">
+                    <h3>Legion of Honour</h3>
+                    <p>France's Highest Civilian Award</p>
+                </div>
+            </div>
+        </div>
+        <div class="awards-counter">
+            <div class="counter-item">
+                <span id="filmfare-count">0</span>
+                <p>Filmfare Awards</p>
+            </div>
+            <div class="counter-item">
+                <span id="box-office-count">0</span>
+                <p>Box Office Records</p>
+            </div>
+            <div class="counter-item">
+                <span id="national-count">0</span>
+                <p>National Honours</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quotes" class="section">
+        <h2>Inspiring Quotes</h2>
+        <div class="quote-container">
+            <p id="quote-text"></p>
+            <p id="quote-source"></p>
+        </div>
+    </section>
+
+    <section id="quotes-grid" class="section">
+        <h2>Words of Wisdom</h2>
+        <div class="quotes-container">
+            <div class="quote-card">
+                <img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/46daabd0-2ea6-4db2-a6d1-58887f1aa36f/ShahRukhKhan_2017-embed.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=82w=640" alt="Bollywood Scene 1">
+                <blockquote>
+                    "Success is not a good teacher, failure makes you humble."
+                </blockquote>
+            </div>
+            <div class="quote-card">
+                <img src="https://assets.gqindia.com/photos/5cdc65d80f4cc03895db1367/master/pass/GQ-India-sha-rukh-khan-TED-2017-vancouver.jpg" alt="Bollywood Scene 2">
+                <blockquote>
+                    "I truly believe my success is due to the love of my fans."
+                </blockquote>
+            </div>
+            <div class="quote-card">
+                <img src="https://i.ytimg.com/vi/VnnXAiTOLbo/maxresdefault.jpg" alt="Bollywood Scene 3">
+                <blockquote>
+                    "I'm like a handyman, I can fix everything except broken hearts."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="fan-messages" class="section">
+        <h2>Fan Messages</h2>
+        <form id="message-form">
+            <input type="text" id="fan-name" placeholder="Your Name" required>
+            <textarea id="fan-message" placeholder="Your Message for SRK" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="messages-container"></div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://twitter.com/iamsrk" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/iamsrk" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/iamsrk" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p class="copyright">© 2024 Tribute to Shah Rukh Khan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
