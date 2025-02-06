@@ -17,8 +17,11 @@ A visually appealing webpage designed for a fictional music store. It displays a
 
 ### Features:
 • Home Page: A well-structured landing page featuring the store's name and offerings.
+
 • Album Showcase: Display different albums with their cover art and artist details.
+
 • Genre Selection: Users can browse music based on different genres.
+
 • Responsive Design: Works well across different devices, from desktops to mobile phones.
 
 ### Live Demo: https://melody-music-store.netlify.app/
