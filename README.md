@@ -35,9 +35,13 @@ A modern, user-friendly website for a restaurant, providing essential details su
 
 ### Features:
 • Landing Page: Attractive homepage with a hero section displaying the restaurant’s ambiance.
+
 • Menu Page: Displays food items categorized into different sections like starters, main courses, and desserts.
+
 • Contact Section: Includes the restaurant’s phone number, email, and address for reservations.
+
 • Gallery: Showcases images of food and restaurant interiors.
+
 • Responsive Layout: Adapts to different screen sizes for better user experience.
 
 ### Live Demo: https://grilli-restaurant-copy.netlify.app/
@@ -49,8 +53,11 @@ A tribute webpage dedicated to Shah Rukh Khan, highlighting his career, achievem
 
 ### Features:
 • Biography Section: Covers important milestones in Shah Rukh Khan’s life.
+
 • Movies and Achievements: A list of his popular movies and awards received.
+
 • Image Gallery: A collection of some of his iconic moments.
+
 • Responsive Design: Ensures readability across different devices.
 
 ### Live Demo: https://srk-tribute-page.netlify.app/
@@ -59,7 +66,9 @@ A tribute webpage dedicated to Shah Rukh Khan, highlighting his career, achievem
 ## Technologies Used:
 
 • HTML – Structuring the content.
+
 • CSS – Styling and layout.
+
 • JavaScript – Adding interactivity and dynamic features.
 
 
