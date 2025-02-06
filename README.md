@@ -21,7 +21,7 @@ A visually appealing webpage designed for a fictional music store. It displays a
 • Genre Selection: Users can browse music based on different genres.
 • Responsive Design: Works well across different devices, from desktops to mobile phones.
 
-### Live Demo: Music Store Page
+### Live Demo: https://melody-music-store.netlify.app/
 
 
 
@@ -37,7 +37,7 @@ A modern, user-friendly website for a restaurant, providing essential details su
 • Gallery: Showcases images of food and restaurant interiors.
 • Responsive Layout: Adapts to different screen sizes for better user experience.
 
-### Live Demo: Restaurant Website
+### Live Demo: https://grilli-restaurant-copy.netlify.app/
 
 
 
