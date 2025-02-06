@@ -50,7 +50,7 @@ A tribute webpage dedicated to Shah Rukh Khan, highlighting his career, achievem
 • Image Gallery: A collection of some of his iconic moments.
 • Responsive Design: Ensures readability across different devices.
 
-### Live Demo: SRK Tribute Page
+### Live Demo: https://srk-tribute-page.netlify.app/
 
 
 ## Technologies Used:
